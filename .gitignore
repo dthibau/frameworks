@@ -1,0 +1,11 @@
+.metadata/
+*.odp
+*.pptx
+*#
+**/bin/
+**/target/
+**/.classpath
+**/.project
+**/.settings
+*.zip
+wildfly-10.0.0.Final/
