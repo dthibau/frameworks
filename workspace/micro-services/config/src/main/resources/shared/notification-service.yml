@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+notification:
+  host: localhost
+  port: 2525
+  username: toto
+  password: secret
+  
+  
+---
+spring:
+  profiles: replica
+  
+  
+server:
+  port: 9091

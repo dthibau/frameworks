@@ -1,0 +1,7 @@
+server:
+  port: 5555
+  
+  
+turbine:
+  clusterNameExpression: new String("default")
+  appConfig: ACCOUNT-SERVICE,GATEWAY

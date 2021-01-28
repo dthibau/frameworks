@@ -1,0 +1,35 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://annuaire:1111/eureka
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - env
+        - health
+        - metrics
+        - httpTrace
+        - mappings
+        - info
+        - loggers
+        - refresh
+        - routes
+        - hystrix.stream
+  endpoint:
+    health:
+      show-details: always
+
+spring:  
+  zipkin:
+    base-url: http://zipkin:9411/
+  sleuth:  
+    sampler:
+      probability: 1
+      
+            
+logging:
+  level:
+    root: INFO

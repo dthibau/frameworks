@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: gateway2
+  
+  cloud:
+    config:
+      fail-fast: true
+      uri:
+      - http://config:8888

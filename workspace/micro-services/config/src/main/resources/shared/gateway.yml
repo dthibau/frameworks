@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    delivery-service: 
+      path: /delivery-service/**
+      strip-prefix: true
+    order-service: 
+      path: /order-service/**
+      strip-prefix: true
+    account-service: 
+      path: /account-service/**
+      strip-prefix: true

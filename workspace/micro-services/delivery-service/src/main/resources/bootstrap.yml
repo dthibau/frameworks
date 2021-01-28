@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: delivery-service
+  
+  cloud:
+    config:
+      fail-fast: true
+      uri:
+      - http://config:8888

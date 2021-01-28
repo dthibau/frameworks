@@ -1,0 +1,6 @@
+server:
+  port: 4444
+
+feign:
+  hystrix:
+    enabled: true

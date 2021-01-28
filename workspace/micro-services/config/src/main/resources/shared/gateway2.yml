@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+          include-expression: metadata['internal'] != 'true'
+               
